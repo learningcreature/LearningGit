@@ -204,3 +204,8 @@ Footer styles
 #procurement:target, #supply:target{
     color: blue !important;
 }
+h2{
+    background: #8392fd;
+    padding: .5rem;
+    text-align: center;
+}
