@@ -1,0 +1,56 @@
+// Small screens
+@media only screen {
+    
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+    
+    /* removing the floats from header contact info */
+    .header-contact-info-social, .header-contact-info-phone{
+        float:none;
+        float: none;
+        }    
+    /* centering logo on small device */
+    .header-logo{
+        margin: 0 auto;
+    }
+    .footer-logo{
+      width: 25%;
+    margin: 0 auto;
+    display: block;    
+}
+
+
+    
+    
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+    
+
+} /* min-width 641px, medium screens */
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    
+    
+        .contain-info-image figure img{
+            width: 100%;
+        }
+    
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+
+
+
+
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+

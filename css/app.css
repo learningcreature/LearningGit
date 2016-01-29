@@ -1,0 +1,206 @@
+
+
+body,html{
+    font-size: 15px;
+}
+address{
+    font-style: normal;
+}
+.main-header{
+/*    border-bottom: 1px solid #999;*/
+    box-shadow: 0 0 10px -1px #999;
+}
+.header-contact-info{
+    margin-top:  32px;
+    margin-top:  2rem;
+}
+
+
+/*clearign floats*/
+header-contact-info{
+    overflow: hidden;
+}
+/*floating contact info to the right */
+.header-contact-info-social, .header-contact-info-phone{
+    float:right;
+    float: right;
+}
+
+.header-contact-info-social li{
+    display: inline-block;
+}
+.header-contact-info-social li>a>i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.header-contact-info-social li:last-child>a>i{
+    margin-right: 0;
+}
+.header-contact-info-phone li>a{
+    font-size: 1.2rem;
+}
+.header-logo{
+    margin-top: 1rem;
+    display: block;
+    height: 125px;
+    width: 125px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+}
+
+/***********************************************************
+    Styling the main content
+************************************************************
+*/
+main{
+    margin-top: 2rem;
+}
+/*images of main content */
+
+.contain-info-image img{
+    padding: 3.5rem 0 0 0 ;
+    width: 100%;
+    height: 100%;
+    
+/*    margin-right:-14px; */
+}
+
+/*styling the main content sections */
+.content-section{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+section h2 a{
+    color:#222;
+    text-align: left !important;
+}
+
+
+
+
+
+
+
+
+/*******************************
+Footer styles
+*********************************/
+
+
+.main-footer-container{
+    background: #073D98;
+    
+}
+.footer-contact-columns{
+    padding: 1rem 0;
+    color:#fff;
+}
+.footer-rights{
+    padding: 1rem 0 ;    
+    text-align: center;
+    color: #fff;
+}
+.footer-strip::before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #2babf5, #154caf);
+}
+.footer-top-image{
+    width: 100%;
+    padding: 6.25% 0 0 0;
+    background: url("../img/footer_bg.png") no-repeat;
+    background-size: contain;
+    z-index: 1000;
+/*background-color: #073d98;*/
+}
+.footer-logo{
+      width: 12%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+/* **************************************************************
+    Styles for the slider *************************************
+*/
+
+/*custom id- wrapper of slider*/
+#unslider{
+    position: relative !important;
+    background: #073D98;
+    width: 100%;
+}
+.my-slider ul li{
+    position: relative;
+}
+.my-slider ul li img{
+    width: 100%;
+}
+.unslider-arrow {
+    display: none;
+    position: absolute;
+    top:50%;
+    color: #fff;
+    font-size: 3rem;
+}
+.unslider-arrow.prev::after{
+    content: "\f0a8";
+    font-family: FontAwesome;
+}
+.unslider-arrow.next::after{
+    content: "\f0a9";
+    font-family: FontAwesome;
+}
+.unslider-play, .unslider-pause{
+    display: none;
+}
+
+/*styling dots*/
+.unslider-nav ol{
+    position: absolute;
+    bottom:0;
+    left:50%;
+}
+
+
+/*Needed only if we are adding additional content on sldiers*/
+/*Slider content */
+.slide-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 1, 3, 0.5);
+    top:50%;
+    left:50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.slide-content li h1, .slide-content li p{
+    color: #fff;
+    
+}
+.slide-content li p{
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+
+#procurement:target, #supply:target{
+    color: blue !important;
+}
